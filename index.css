@@ -1,0 +1,75 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* index.css */
+
+/* index.css */
+
+/* Use flex to center everything on the screen */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+}
+
+/* Game title or status */
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* The board - each row */
+.board-row {
+  display: flex;
+}
+
+/* Each square in the grid */
+.square {
+  background: white;
+  border: 2px solid #333;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  margin: -1px 0 0 -1px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.square:hover {
+  background: #f0f0f0;
+}
+
+/* Highlight winner's squares */
+.square.winner {
+  background-color: #c8e6c9;
+}
+
+/* Wrapper for the board */
+.game {
+  display: inline-block;
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 18px;
+}
